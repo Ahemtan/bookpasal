@@ -1,0 +1,33 @@
+import type { Metadata } from "next";
+import { DM_Sans } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "BookCycle",
+  description: " Giving books a second life.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={`${dmSans.className} antialiased`}>
+        <Header />
+
+        {children}
+
+        <Footer />
+      </body>
+    </html>
+  );
+}
