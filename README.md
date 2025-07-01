@@ -63,6 +63,8 @@ Built with:
 | PostgreSQL   | (Planned) Database        |
 | Khalti       | (Planned) Payment Gateway |
 | Vercel       | Deployment                |
+| Auth         | Better Auth (planned)     |
+
 
 ---
 
