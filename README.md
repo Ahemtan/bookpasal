@@ -20,10 +20,10 @@ Built with:
 
 ### 🔧 In Progress (Backend)
 
-- 🔐 **Authentication** (NextAuth / Clerk / custom JWT)
-- 💾 **Database integration** (PostgreSQL / MongoDB via Prisma or ORM of choice)
+- 🔐 **Authentication** (Better Auth / Clerk)
+- 💾 **Database integration** (PostgreSQL)
 - 🔄 **CRUD operations** for books
-- 💳 **Purchase flow** – Payment Gateway (Stripe) and Cash on Delivery
+- 💳 **Purchase flow** – Payment Gateway (Khalti) and Cash on Delivery
 - 📊 **User Dashboard** – track purchases, sales, and listed books
 
 ---
