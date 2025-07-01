@@ -1,6 +1,6 @@
-# 📚 BookCycle – A Full Stack Book Recycling App
+# 📚 BookPasal – A Full Stack Book Recycling App
 
-BookCycle is a full-stack web application designed to make book recycling easy and accessible. Users can list, buy, and manage recycled books with a clean UI and modern features.
+BookPasal is a full-stack web application designed to make book recycling easy and accessible. Users can list, buy, and manage recycled books with a clean UI and modern features.
 
 Built with:
 
@@ -65,14 +65,13 @@ Built with:
 | Vercel       | Deployment                |
 | Auth         | Better Auth (planned)     |
 
-
 ---
 
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/your-username/bookcycle.git
-cd bookcycle
+git clone https://github.com/ahemtan/bookpasal.git
+cd bookpasal
 npm install
 npm run dev
 ```

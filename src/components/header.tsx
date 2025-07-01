@@ -14,7 +14,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center">
-            <div className="text-2xl font-bold text-green-700">BookCycle</div>
+            <div className="text-2xl font-bold text-green-700">BookPasal</div>
           </Link>
 
           <div className="relative hidden sm:block">

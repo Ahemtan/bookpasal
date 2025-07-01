@@ -10,7 +10,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BookCycle",
+  title: "Book Pasal",
   description: " Giving books a second life.",
 };
 

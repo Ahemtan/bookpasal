@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="text-2xl font-bold text-green-400 mb-4">
-              BookCycle
+              BookPasal
             </div>
             <p className="text-gray-400">
               Giving books a second life while supporting sustainability.
@@ -91,7 +91,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
           <p>
-            &copy; 2024 BookCycle. All rights reserved. Made with 💚 for our
+            &copy; 2024 BookPasal. All rights reserved. Made with 💚 for our
             planet.
           </p>
         </div>
