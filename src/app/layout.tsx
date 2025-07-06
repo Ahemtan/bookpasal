@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { CartProvider } from "@/providers/CartContext";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -22,11 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.className} antialiased`}>
-        <Header />
-
-        {children}
-
-        <Footer />
+        <CartProvider>
+          <Header />
+          {children}
+          <Footer />
+        </CartProvider>
       </body>
     </html>
   );

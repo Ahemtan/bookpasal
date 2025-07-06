@@ -1,6 +1,9 @@
+"use client";
+
 import { Heart, Share } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useCart } from "@/hooks/use-cart";
 import Link from "next/link";
 
 interface BookCardProps {
@@ -22,6 +25,9 @@ const BookCard = ({
   image,
   seller,
 }: BookCardProps) => {
+  const { addItem } = useCart();
+
+  const handleClick = (id: string) => addItem(id);
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-lg cursor-pointer group">
       <div className="aspect-[3/4] overflow-hidden bg-gray-100">
@@ -35,9 +41,12 @@ const BookCard = ({
       <div className="p-4">
         <div className="flex items-start justify-between mb-2">
           <div className="flex-1 min-w-0">
-            <h3 className="font-semibold text-gray-900 truncate text-sm">
+            <Link
+              href={`/books/${id}`}
+              className="font-semibold text-gray-900 truncate text-sm"
+            >
               {title}
-            </h3>
+            </Link>
             <p className="text-sm text-gray-600 truncate">by {author}</p>
           </div>
           <div className="flex items-center space-x-1 ml-2">
@@ -70,8 +79,13 @@ const BookCard = ({
 
         <div className="text-xs text-gray-500 mb-3">Sold by {seller}</div>
 
-        <Button className="w-full bg-green-600 hover:bg-green-700 transition-colors">
-          <Link href={`/books/${id}`}>Buy Now</Link>
+        <Button
+          onClick={() =>
+            addItem({ id, title, author, price, condition, image, seller })
+          }
+          className="w-full bg-green-600 hover:bg-green-700 transition-colors"
+        >
+          Add To Cart
         </Button>
       </div>
     </div>
