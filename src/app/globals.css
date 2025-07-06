@@ -163,3 +163,7 @@
 .read-the-docs {
   color: #888;
 }
+
+* {
+  touch-action: manipulation;
+}

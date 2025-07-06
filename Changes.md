@@ -18,3 +18,4 @@ added cart
 - added cart 🛒
 - card state management and context
 - bug fixes on card link
+- fixed screen zooming problem in phone
